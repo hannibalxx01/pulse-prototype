@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=430">
+<title>Pulse — Map</title>
+<link rel="stylesheet" href="pulse-design.css">
+</head>
+<body>
+<div class="app-shell">
+  <div class="app-shell-body">
+    <main class="screen" style="position:relative;">
+      <div class="topnav" style="background:transparent;">
+        <div style="display:flex;align-items:center;gap:8px;background:rgba(13,17,23,0.85);backdrop-filter:blur(10px);padding:8px 14px;border-radius:999px;border:1px solid var(--border);">
+          <span style="font-size:15px;">🇸🇬</span>
+          <span style="font-size:13px;font-weight:700;">Singapore</span>
+        </div>
+        <div style="background:rgba(232,184,109,0.15);border:1px solid rgba(232,184,109,0.4);border-radius:999px;padding:6px 12px;font-size:11px;font-weight:700;color:var(--amber);">
+          6 live tonight
+        </div>
+      </div>
+
+      <!-- Map surface -->
+      <div style="flex:1;position:relative;background:linear-gradient(160deg,#141C29,#0D1117 60%);overflow:hidden;">
+        <!-- faux street grid -->
+        <div style="position:absolute;inset:0;opacity:0.35;background-image:linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px);background-size:38px 38px;"></div>
+
+        <!-- pins -->
+        <div style="position:absolute;top:32%;left:28%;">
+          <div class="leaflet-pulse-ring"></div>
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 4px 14px rgba(0,0,0,0.4);">🍹</div>
+        </div>
+        <div style="position:absolute;top:52%;left:58%;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 4px 14px rgba(0,0,0,0.4);">🎧</div>
+        </div>
+        <div style="position:absolute;top:68%;left:32%;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--slate);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;">🎵</div>
+        </div>
+        <div style="position:absolute;top:22%;left:68%;">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--slate);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:16px;">🥂</div>
+        </div>
+
+        <!-- geo-alert banner -->
+        <div style="position:absolute;top:16px;left:16px;right:16px;background:rgba(93,202,165,0.14);border:1px solid rgba(93,202,165,0.35);border-radius:var(--r-lg);padding:12px 14px;display:flex;align-items:center;gap:10px;backdrop-filter:blur(10px);">
+          <div style="font-size:18px;">📍</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:700;color:var(--green);">You're near Amber Rooftop</div>
+            <div style="font-size:10px;color:var(--fg3);margin-top:1px;">A perk is waiting 80m away</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom sheet preview of nearest event -->
+      <div style="padding:14px 16px;background:var(--navy);border-top:1px solid var(--border);">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:48px;height:48px;border-radius:var(--r-md);background:linear-gradient(135deg,#1B2F4A,#0D1E30);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">🍹</div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:700;color:var(--fg);">Happy Hour — Amber Rooftop</div>
+            <div style="font-size:11px;color:var(--fg3);margin-top:2px;">19:00–23:00 · 12 tourists heading here</div>
+          </div>
+          <div class="badge badge-amber">🎁 Perk</div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <nav class="app-nav">
+    <a href="consumer-map.html" class="active"><span>🗺</span><span class="label">Map</span></a>
+    <a href="consumer-explore.html"><span>🔍</span><span class="label">Explore</span></a>
+    <a href="consumer-perks-wallet.html"><span>🎁</span><span class="label">Perks</span></a>
+    <a href="#"><span>👤</span><span class="label">Account</span></a>
+  </nav>
+</div>
+</body>
+</html>

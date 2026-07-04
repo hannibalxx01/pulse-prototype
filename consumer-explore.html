@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=430">
+<title>Pulse — Explore</title>
+<link rel="stylesheet" href="pulse-design.css">
+</head>
+<body>
+<div class="app-shell">
+  <div class="app-shell-body">
+    <main class="screen">
+      <div style="padding:10px 16px 0;">
+        <div style="display:flex;align-items:center;gap:10px;background:var(--slate);border-radius:var(--r-md);padding:0 14px;height:46px;border:1px solid var(--border);">
+          <span style="font-size:17px;color:var(--fg3);">🔍</span>
+          <span style="font-size:15px;color:var(--fg3);">Search events, venues, vibes…</span>
+        </div>
+      </div>
+
+      <div style="padding:14px 16px 0;">
+        <div style="font-size:10px;font-weight:700;color:var(--fg3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">When</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+          <div class="when-chip on"><div class="wc-main">Tonight</div><div class="wc-sub">Live now</div></div>
+          <div class="when-chip"><div class="wc-main">Tomorrow</div><div class="wc-sub">Plan ahead</div></div>
+          <div class="when-chip"><div class="wc-main">This Weekend</div><div class="wc-sub">Sat – Sun</div></div>
+          <div class="when-chip"><div class="wc-main">Next Weekend</div><div class="wc-sub">Coming up</div></div>
+        </div>
+      </div>
+
+      <div style="padding:14px 16px 0;">
+        <div style="font-size:10px;font-weight:700;color:var(--fg3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Vibe</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;">
+          <div class="f-chip on">✨ All</div>
+          <div class="f-chip">🎵 Music</div>
+          <div class="f-chip">🎧 DJ</div>
+          <div class="f-chip">🌆 Rooftop</div>
+          <div class="f-chip">🥂 Brunch</div>
+          <div class="f-chip">🍷 Tasting</div>
+        </div>
+      </div>
+
+      <div style="flex:1;overflow-y:auto;margin-top:14px;border-top:1px solid var(--border);">
+        <div style="padding:10px 16px 4px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:13px;font-weight:700;color:var(--fg);">4 events found</span>
+          <span style="font-size:11px;color:var(--fg3);">Sorted by time ↑</span>
+        </div>
+
+        <div style="display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;">
+          <div style="width:54px;height:54px;border-radius:var(--r-md);background:linear-gradient(135deg,#1B2F4A,#0D1E30);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🍹</div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:700;color:var(--fg);margin-bottom:2px;">Happy Hour</div>
+            <div style="font-size:11px;color:var(--fg3);margin-bottom:5px;">Amber Rooftop · Tue, 7 Jul</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:11px;color:var(--fg3);">19:00–23:00</span>
+              <span class="ri-perk">🎁 Perk</span>
+              <span class="ri-free">FREE</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;">
+          <div style="width:54px;height:54px;border-radius:var(--r-md);background:linear-gradient(135deg,#2A1B3C,#170D22);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🎧</div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:700;color:var(--fg);margin-bottom:2px;">Friday DJ Set</div>
+            <div style="font-size:11px;color:var(--fg3);margin-bottom:5px;">Void Club · Tue, 7 Jul</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:11px;color:var(--fg3);">22:00–03:00</span>
+              <span class="ri-perk">🎁 Perk</span>
+              <span class="ri-free">FREE</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;">
+          <div style="width:54px;height:54px;border-radius:var(--r-md);background:linear-gradient(135deg,#1A2E1C,#0D1A0E);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🎵</div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:700;color:var(--fg);margin-bottom:2px;">Live Jazz Night</div>
+            <div style="font-size:11px;color:var(--fg3);margin-bottom:5px;">Blue Note Bar · Tue, 7 Jul</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:11px;color:var(--fg3);">20:00–00:00</span>
+              <span class="ri-free">FREE</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;">
+          <div style="width:54px;height:54px;border-radius:var(--r-md);background:linear-gradient(135deg,#2A2218,#1A150E);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;">🥂</div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:700;color:var(--fg);margin-bottom:2px;">Rooftop Brunch</div>
+            <div style="font-size:11px;color:var(--fg3);margin-bottom:5px;">Sky Terrace · Wed, 8 Jul</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:11px;color:var(--fg3);">11:00–15:00</span>
+              <span class="ri-perk">🎁 Perk</span>
+              <span class="ri-free">FREE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <nav class="app-nav">
+    <a href="consumer-map.html"><span>🗺</span><span class="label">Map</span></a>
+    <a href="consumer-explore.html" class="active"><span>🔍</span><span class="label">Explore</span></a>
+    <a href="consumer-perks-wallet.html"><span>🎁</span><span class="label">Perks</span></a>
+    <a href="#"><span>👤</span><span class="label">Account</span></a>
+  </nav>
+</div>
+</body>
+</html>

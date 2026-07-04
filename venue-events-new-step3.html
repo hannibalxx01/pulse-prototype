@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=430">
+<title>Pulse — New Event · Step 3</title>
+<link rel="stylesheet" href="pulse-design.css">
+</head>
+<body>
+<main class="screen">
+  <div class="topnav">
+    <a class="topnav-back" href="venue-events-new-step2.html">←</a>
+    <div class="topnav-title">New Event</div>
+    <span style="font-size:11px;color:var(--fg3);">3 / 3</span>
+  </div>
+
+  <div style="padding:0 20px 8px;">
+    <div class="step-row">
+      <div class="step-dot done">✓</div>
+      <div class="step-line done"></div>
+      <div class="step-dot done">✓</div>
+      <div class="step-line done"></div>
+      <div class="step-dot active">3</div>
+    </div>
+  </div>
+
+  <div class="scroll-body" style="padding-top:4px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div>
+        <div style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--fg);margin-bottom:4px;">Set a Perk</div>
+        <div style="font-size:13px;color:var(--fg3);">Hidden until users tap <span style="color:var(--amber);font-weight:600;">I'm Going</span>.</div>
+      </div>
+
+      <label class="input-label">What's the perk?</label>
+
+      <div class="perk-tile sel">
+        <div class="pt-icon">🍹</div>
+        <div class="pt-body"><div class="pt-title">Free welcome drink</div><div class="pt-sub">1 drink on arrival</div></div>
+      </div>
+      <div class="perk-tile">
+        <div class="pt-icon">⚡</div>
+        <div class="pt-body"><div class="pt-title">Skip the queue</div><div class="pt-sub">Priority entry at the door</div></div>
+      </div>
+      <div class="perk-tile">
+        <div class="pt-icon">💰</div>
+        <div class="pt-body"><div class="pt-title">Discount on entry</div><div class="pt-sub">% or S$ off the cover</div></div>
+      </div>
+      <div class="perk-tile">
+        <div class="pt-icon">🪑</div>
+        <div class="pt-body"><div class="pt-title">Reserved seat</div><div class="pt-sub">Spot held until set time</div></div>
+      </div>
+      <div class="perk-tile">
+        <div class="pt-icon">🎁</div>
+        <div class="pt-body"><div class="pt-title">Free item</div><div class="pt-sub">Shot, snack, merch</div></div>
+      </div>
+      <div class="perk-tile">
+        <div class="pt-icon">✏️</div>
+        <div class="pt-body"><div class="pt-title">Custom perk</div><div class="pt-sub">Write your own offer</div></div>
+      </div>
+
+      <div class="input-group">
+        <label class="input-label">How many perks?</label>
+        <div class="stepper">
+          <button class="stepper-btn">−</button>
+          <div class="stepper-val">30</div>
+          <button class="stepper-btn">+</button>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,#1A2A1E,#0F1A12);border:1.5px solid rgba(93,202,165,0.25);border-radius:var(--r-lg);padding:14px;">
+        <div style="font-size:10px;color:var(--green);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Preview — what users see on unlock</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="font-size:26px;">🍹</div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--fg);">Free welcome drink</div>
+            <div style="font-size:11px;color:var(--fg3);margin-top:2px;">30 available · Valid tonight</div>
+          </div>
+          <div style="margin-left:auto;background:var(--amber2);border:1px solid rgba(232,184,109,0.2);border-radius:var(--r-sm);padding:5px 10px;font-size:12px;font-weight:800;color:var(--amber);">PSL-####</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding:12px 20px;background:rgba(13,17,23,0.96);border-top:1px solid var(--border);">
+    <div style="display:flex;gap:10px;">
+      <button class="btn btn-ghost btn-sm" style="flex:1;">Skip perk</button>
+      <a class="btn btn-primary btn-sm" style="flex:2;" href="venue-dashboard.html">⚡ Publish Event</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

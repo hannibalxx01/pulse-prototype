@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=430">
+<title>Pulse — Claims History</title>
+<link rel="stylesheet" href="pulse-design.css">
+</head>
+<body>
+<div class="app-shell">
+  <div class="app-shell-body">
+    <main class="screen">
+      <div style="padding:12px 20px 10px;display:flex;align-items:flex-end;justify-content:space-between;">
+        <div>
+          <div style="font-size:10px;color:var(--fg3);letter-spacing:0.08em;text-transform:uppercase;">History</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:26px;color:var(--fg);">Claims</div>
+        </div>
+        <button style="height:34px;padding:0 12px;font-size:11px;font-weight:600;border-radius:var(--r-full);background:rgba(255,255,255,0.05);color:var(--fg2);border:1px solid var(--border);">↓ Export</button>
+      </div>
+
+      <div class="scroll-body" style="padding-top:4px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+          <button style="background:none;border:none;color:var(--fg);font-size:20px;padding:0 8px;">‹</button>
+          <span style="font-size:14px;font-weight:700;color:var(--fg);">JULY 2026</span>
+          <button style="background:none;border:none;color:var(--fg3);font-size:20px;padding:0 8px;">›</button>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:16px;margin-bottom:14px;">
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;text-align:center;margin-bottom:14px;">
+            <div><div style="font-size:22px;font-weight:800;color:var(--amber);">6</div><div style="font-size:9px;color:var(--fg3);text-transform:uppercase;letter-spacing:0.06em;">Going</div></div>
+            <div><div style="font-size:22px;font-weight:800;color:var(--green);">41</div><div style="font-size:9px;color:var(--fg3);text-transform:uppercase;letter-spacing:0.06em;">Walk-ins</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
+                <span style="font-size:12px;color:var(--fg2);">🍹 Free welcome drink</span>
+                <span style="font-size:12px;font-weight:700;color:var(--green);">24 claimed</span>
+              </div>
+              <div class="cap-track"><div class="cap-fill" style="width:100%;background:var(--amber);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
+                <span style="font-size:12px;color:var(--fg2);">⚡ Skip the queue</span>
+                <span style="font-size:12px;font-weight:700;color:var(--green);">17 claimed</span>
+              </div>
+              <div class="cap-track"><div class="cap-fill" style="width:71%;background:var(--amber);"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-label">Events — JULY 2026</div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border);">
+            <div style="flex:1;">
+              <div style="font-size:13px;font-weight:700;color:var(--fg);">Happy Hour</div>
+              <div style="font-size:10px;color:var(--fg3);">Tue, 7 Jul</div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:14px;font-weight:800;color:var(--green);">18 walk-ins</div>
+              <div style="font-size:10px;color:var(--fg3);">3 going</div>
+            </div>
+          </div>
+          <div style="padding:10px 14px;display:flex;flex-direction:column;gap:5px;background:rgba(0,0,0,0.15);">
+            <div style="display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:var(--fg3);">🍹 Free welcome drink</span>
+              <span style="font-size:11px;font-weight:600;color:var(--green);">18 claimed</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border);">
+            <div style="flex:1;">
+              <div style="font-size:13px;font-weight:700;color:var(--fg);">Friday DJ Set</div>
+              <div style="font-size:10px;color:var(--fg3);">Fri, 3 Jul</div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:14px;font-weight:800;color:var(--green);">23 walk-ins</div>
+            </div>
+          </div>
+          <div style="padding:10px 14px;display:flex;flex-direction:column;gap:5px;background:rgba(0,0,0,0.15);">
+            <div style="display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:var(--fg3);">⚡ Skip the queue</span>
+              <span style="font-size:11px;font-weight:600;color:var(--green);">17 claimed</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:var(--fg3);">🎁 Free shot</span>
+              <span style="font-size:11px;font-weight:600;color:var(--green);">6 claimed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <nav class="app-nav">
+    <a href="venue-dashboard.html"><span>⚡</span><span class="label">Dashboard</span></a>
+    <a href="venue-events-new-step1.html"><span>📅</span><span class="label">Events</span></a>
+    <a href="venue-claims.html" class="active"><span>📊</span><span class="label">Claims</span></a>
+    <a href="#"><span>🏢</span><span class="label">Profile</span></a>
+  </nav>
+</div>
+</body>
+</html>
