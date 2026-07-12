@@ -38,6 +38,14 @@
         <div style="font-size:11px;color:var(--fg3);margin-top:6px;">Show this code to the bartender</div>
       </div>
       <button class="btn btn-ghost btn-sm" style="margin-top:8px;">↗ Copy code</button>
+
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed rgba(93,202,165,0.25);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-size:11px;color:var(--fg3);">⏳ Claim before it expires</span>
+          <span id="perk-timer-text" style="font-size:13px;font-weight:800;color:var(--amber);font-variant-numeric:tabular-nums;">30:00</span>
+        </div>
+        <div class="cap-track"><div id="perk-timer-fill" class="cap-fill" style="width:100%;background:var(--amber);"></div></div>
+      </div>
     </div>
 
     <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:14px 16px;margin-bottom:12px;">
@@ -46,5 +54,28 @@
     </div>
   </div>
 </main>
+<script>
+(function(){
+  var totalSeconds = 30 * 60;
+  var remaining = totalSeconds;
+  var textEl = document.getElementById('perk-timer-text');
+  var fillEl = document.getElementById('perk-timer-fill');
+  function render(){
+    var m = Math.floor(remaining / 60);
+    var s = remaining % 60;
+    textEl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+    fillEl.style.width = Math.max(0, (remaining / totalSeconds) * 100) + '%';
+    var urgent = remaining <= 5 * 60;
+    textEl.style.color = urgent ? 'var(--red)' : 'var(--amber)';
+    fillEl.style.background = urgent ? 'var(--red)' : 'var(--amber)';
+  }
+  render();
+  var tick = setInterval(function(){
+    remaining = Math.max(0, remaining - 1);
+    render();
+    if (remaining === 0) clearInterval(tick);
+  }, 1000);
+})();
+</script>
 </body>
 </html>

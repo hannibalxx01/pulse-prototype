@@ -67,15 +67,30 @@
         </div>
       </div>
 
+      <div class="input-group" style="margin-bottom:0;">
+        <label class="input-label">Claim window <span style="font-weight:400;opacity:0.5;">once accepted</span></label>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+          <div class="date-chip"><div class="dc-label">15 min</div><div class="dc-sub">Fast turnover</div></div>
+          <div class="date-chip sel"><div class="dc-label">30 min</div><div class="dc-sub">Recommended</div></div>
+          <div class="date-chip"><div class="dc-label">1 hour</div><div class="dc-sub">Relaxed</div></div>
+          <div class="date-chip"><div class="dc-label">No limit</div><div class="dc-sub">Until event ends</div></div>
+        </div>
+        <div style="font-size:11px;color:var(--fg3);margin-top:8px;">⏳ Once a guest is accepted, their perk expires if not claimed in time — keeps no-shows from holding a spot.</div>
+      </div>
+
       <div style="background:linear-gradient(135deg,#1A2A1E,#0F1A12);border:1.5px solid rgba(93,202,165,0.25);border-radius:var(--r-lg);padding:14px;">
         <div style="font-size:10px;color:var(--green);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Preview — what users see on unlock</div>
-        <div style="display:flex;align-items:center;gap:12px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
           <div style="font-size:26px;">🍹</div>
           <div>
             <div style="font-size:14px;font-weight:700;color:var(--fg);">Free welcome drink</div>
             <div style="font-size:11px;color:var(--fg3);margin-top:2px;">30 available · Valid tonight</div>
           </div>
           <div style="margin-left:auto;background:var(--amber2);border:1px solid rgba(232,184,109,0.2);border-radius:var(--r-sm);padding:5px 10px;font-size:12px;font-weight:800;color:var(--amber);">PSL-####</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;padding-top:8px;border-top:1px dashed rgba(93,202,165,0.2);">
+          <span style="font-size:12px;">⏳</span>
+          <span style="font-size:11px;color:var(--green);font-weight:600;">Expires 30 min after acceptance</span>
         </div>
       </div>
     </div>
